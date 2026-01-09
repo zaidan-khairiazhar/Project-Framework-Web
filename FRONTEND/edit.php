@@ -76,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <option value="">Pilih Propinsi</option>
                 <?php foreach($propinsiList as $prop): ?>
                     <option value="<?php echo $prop['id']; ?>" <?php echo ($prop['id'] == $kotaData['propinsi_id']) ? 'selected' : ''; ?>>
-                        <?php echo $prop['propinsi']; ?>
+                        <?php echo $prop['nama_propinsi']; ?>
                     </option>
                 <?php endforeach; ?>
             </select>

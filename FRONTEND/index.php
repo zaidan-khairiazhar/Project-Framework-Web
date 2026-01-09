@@ -57,7 +57,7 @@ $kotaList = $data['data'] ?? [];
                 <tr>
                     <td><?php echo $kota['id']; ?></td>
                     <td><?php echo htmlspecialchars($kota['nama_kota']); ?></td>
-                    <td><?php echo htmlspecialchars($kota['propinsi']['propinsi'] ?? '-'); ?></td>
+                    <td><?php echo htmlspecialchars($kota['propinsi']['nama_propinsi'] ?? '-'); ?></td>
                     <td>
                         <a href="edit.php?id=<?php echo $kota['id']; ?>" class="btn btn-edit">Edit</a>
                         <a href="delete.php?id=<?php echo $kota['id']; ?>" class="btn btn-delete" onclick="return confirm('Yakin hapus?');">Hapus</a>

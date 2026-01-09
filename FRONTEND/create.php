@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <select name="propinsi_id" required>
                 <option value="">Pilih Propinsi</option>
                 <?php foreach($propinsiList as $prop): ?>
-                    <option value="<?php echo $prop['id']; ?>"><?php echo $prop['propinsi']; ?></option>
+                    <option value="<?php echo $prop['id']; ?>"><?php echo $prop['nama_propinsi']; ?></option>
                 <?php endforeach; ?>
             </select>
         </div>
